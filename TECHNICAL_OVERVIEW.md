@@ -17,8 +17,6 @@ portfolio_horse_racing_ai/
 │       └── data_validator.py
 ├── config/                     # 設定ファイル
 │   └── model_config_sample.json
-├── docs/                       # ドキュメント
-└── tests/                      # テストコード
 ```
 
 ## 技術仕様
