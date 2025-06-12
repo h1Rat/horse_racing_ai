@@ -1,0 +1,68 @@
+# Python関連
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# 仮想環境
+venv/
+ENV/
+env/
+.venv/
+
+# IDE関連
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# データファイル
+*.csv
+*.json
+data/
+datasets/
+models/
+*.pkl
+*.model
+
+# ログファイル
+*.log
+logs/
+
+# 設定ファイル（機密情報含む）
+config/model_config.json
+config/secret.json
+
+# OS関連
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# ChromeDriver
+chromedriver.exe
+chromedriver
+
+# 一時ファイル
+temp/
+tmp/
+*.tmp 
