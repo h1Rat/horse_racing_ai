@@ -138,7 +138,7 @@ df_Shinbun = infoSc.main(race_url)
 #### B. 競馬データサイトB データ (`mod/data_scrap.py`)
 ```python
 # 出馬表・過去走データ・騎手情報取得
-df_netkeiba, nk_modoDF = dataSc.main(race_url)
+df_keibadata, nk_modoDF = dataSc.main(race_url)
 
 # 騎手名の照合システム（2023年マスターデータ使用）
 J_List23 = pd.read_csv("mod/jockeysData2023.csv")
@@ -158,7 +158,7 @@ horse_racing_results = pd.merge(horse_racing_results, df_official, on="馬名", 
 ### 3. データ統合・前処理フェーズ
 ```python
 # 競馬情報サイトAデータと競馬データサイトBデータの横結合
-df_HorseList = pd.concat([df_Shinbun, df_netkeiba], axis=1)
+df_HorseList = pd.concat([df_Shinbun, df_keibadata], axis=1)
 
 # レース情報の補足
 df_HorseList["レースID"] = race_url
